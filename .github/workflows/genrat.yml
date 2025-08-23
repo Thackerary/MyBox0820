@@ -32,7 +32,7 @@ jobs:
 
     - name: Generate subscription
       run: |
-        ./subconverter -c config.yml
+        ./subconverter/subconverter -c config.yml
 
     - name: Commit and push
       run: |
