@@ -1,0 +1,5 @@
+node: "hoeren.txt"          # 原始节点文件
+target: "v2ray"            # 输出格式，Xray/V2Ray
+insert: false              # 不插入延迟
+emoji: false               # 不显示国旗
+out: "work/finale.txt" # 输出文件路径
