@@ -1,4 +1,4 @@
-name: Generate Xray Sub
+name: Generate Sub
 
 on:
   push:
