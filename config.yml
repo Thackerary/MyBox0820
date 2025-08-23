@@ -1,5 +1,6 @@
 node: "hoeren.txt"          # 原始节点文件
 target: "v2ray"            # 输出格式，Xray/V2Ray
+rules: []                  #不需要规则集
 insert: false              # 不插入延迟
 emoji: false               # 不显示国旗
 group: ""                  #不要分组
