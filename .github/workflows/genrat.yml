@@ -1,0 +1,43 @@
+name: Generate Xray Sub
+
+on:
+  push:
+    paths:
+      - 'hoeren.txt'        # 当 hoeren.txt 更新时触发
+  workflow_dispatch:       # 支持手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PyYAML requests
+
+    - name: Download Subconverter CLI
+      run: |
+        curl -L https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux_amd64.tar.gz -o subconverter.tar.gz
+        tar -xzf subconverter.tar.gz
+        chmod +x subconverter
+
+    - name: Generate subscription
+      run: |
+        ./subconverter -c config.yml
+
+    - name: Commit and push
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
+        git add work/finale.txt
+        git commit -m "Update generated subscription" || echo "No changes to commit"
+        git push
