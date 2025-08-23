@@ -1,2 +1,3 @@
 vless://79c3f807-5adc-41a9-8ddf-26c6eb4b229b@jprisner.creatureinbox.icu:443?type=xhttp&mode=packet-up&path=/pFKVQs2yjvDYISp1IVgVqPIC5tzbjIFCtdu7hXwRJo9axS2VOlrko82F0XcCCc&security=tls&fp=chrome&sni=jprisner.creatureinbox.icu&alpn=h2,http/1.1&allowInsecure=false#JP_xhttp_cdn
 vless://6de0882c-d779-417b-ab2d-b5456279de85@wormhole.creatureinbox.icu:443?type=xhttp&mode=packet-up&path=/m9BtWBUf0m7Zd6Bfpy3Uuek7ePop2cGjcpMI2ioXeUCBC&security=tls&fp=chrome&sni=wormhole.creatureinbox.icu&alpn=h2,http/1.1&allowInsecure=false#US_xhttp_cdn
+vless://65d11222-1cfd-45bf-948b-422dad45e26e@tw.creatureinboxes.top:443?type=xhttp&mode=packet-up&path=/pM5xI5A3doZjD44lXLj8d3ZWg5REFwVXuber&security=tls&fp=chrome&sni=tw.creatureinboxes.top&alpn=h2,http/1.1&allowInsecure=false#TW_xhttp_cdn
